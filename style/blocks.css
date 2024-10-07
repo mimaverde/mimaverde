@@ -1,0 +1,29 @@
+.container {
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.container .page {
+    scroll-snap-align: start;
+}
+
+
+.primary {
+    display: flex;
+}
+
+.block__transparent {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+
+.block__image {
+    margin-bottom: -5px;
+}
+
+.page {
+    scroll-snap-align: start;
+    /* scroll-snap-stop: always; */
+}
+  
+  

@@ -1,0 +1,104 @@
+header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    right: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header__nav {
+    padding: 1rem 2rem;
+}
+
+.header__nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    background-color: transparent;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.header__nav a:hover {
+    background-color: var(--secondary-color);
+    transition: all 0.3 ease;
+}
+
+.header__nav a.selected {
+    background-color: var(--secondary-color);
+}
+
+.nav__mobile {
+    position: absolute;
+    display: none;
+    top: 32px;
+    right: 32px;
+}
+
+.nav__mobile div {
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__mobile {
+        display: block;
+    }
+
+    .header__nav ul {
+        display: none;
+        visibility: hidden;
+        font-size: 2rem;
+        position: absolute;
+        top: -20px;
+        background-color: var(--secondary-color);
+        height: 100vh;
+        left: -20px;
+        right: 0;
+        text-align: center;
+        padding: 100px;
+        line-height: 50px;
+        font-size: 0;
+    }
+
+    .header__nav.open ul {
+        display: block;
+        visibility: visible;
+        animation: showSide 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    .header__nav.open .nav__mobile{
+        transform: matrix(-1, 0, 0, -1, 0, 0);
+        transition: all 1.6s cubic-bezier(0.850, -0.475, 0.435, 1.000);
+    }
+
+    .header__nav.open .nav__mobile div:nth-child(1) {
+        animation: toActive1 1.5s forwards ease-out;
+    }
+
+    .header__nav.open .nav__mobile div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header__nav.open .nav__mobile div:nth-child(3){
+        animation: toActive2 1.5s forwards ease-out;
+    }
+    
+    .header__nav a {
+        font-size: 2rem;
+    }
+}
