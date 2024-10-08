@@ -3,7 +3,7 @@ header {
     top: 0;
     z-index: 2;
     right: 0;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -79,6 +79,7 @@ header {
         display: block;
         visibility: visible;
         animation: showSide 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        display: none;
     }
 
     .header__nav.open .nav__mobile{

@@ -17,9 +17,17 @@
     --color-4: #461791;
 }
 
+:root {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
+    width: 100vw;
 }
 
 body {
