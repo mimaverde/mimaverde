@@ -18,14 +18,15 @@
 
     --yellow: #F5F17D;
     --dark-green: darkslategray;
+
+    --space: 5px;
+
+    box-sizing: border-box;
 }
 
-:root {
-    box-sizing: border-box;
-  }
-  *, *::before, *::after {
+*, *::before, *::after {
     box-sizing: inherit;
-  }
+}
 
 html {
     scroll-behavior: smooth;
@@ -46,6 +47,12 @@ body {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+    body[data-menu-open="true"] {
+        overflow: hidden;
+    }
+}
+
 p, a {
     font-family: var(--font-default);
 }
@@ -55,7 +62,7 @@ p {
 }
 
 ::selection {
-    background-color: var(--secondary-color);
+    background-color: var(--spaceecondary-color);
     color: var(--white);
 }
 

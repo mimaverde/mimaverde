@@ -50,36 +50,70 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Select all sections
+    //Page beging visited
     const sections = document.querySelectorAll('[data-page]');
     const nav = document.querySelectorAll('#myMenu a');
-
-    // Create an IntersectionObserver
+    
     const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        entries.forEach(entry => {
             const page = entry.target.getAttribute('data-page');
-            document.body.className = page;
-
-            nav.forEach(item => {
-                if(item.hasAttribute('aria-current') !== page){
-                    item.removeAttribute('aria-current');
-                }
-                if(item.getAttribute('data-content') === page) {
-
-                    item.setAttribute('aria-current', 'page');
-                }
-            });
-            
-        }
-    });
+            const isIntersecting = entry.isIntersecting;
+    
+            if (isIntersecting) {
+                document.body.className = page;
+    
+                nav.forEach(item => {
+                    if (item.getAttribute('data-content') === page) {
+                        item.setAttribute('aria-current', 'page');
+                    } else {
+                        item.removeAttribute('aria-current');
+                    }
+                });
+            }
+        });
     }, {
-    threshold: 0.8
+        threshold: 0.25
     });
-
-    // Observe each section
+    
     sections.forEach(section => {
         observer.observe(section);
+    });
+    
+    window.addEventListener('scroll', function() {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                const page = section.getAttribute('data-page');
+                document.body.className = page;
+                nav.forEach(item => {
+                    if (item.getAttribute('data-content') === page) {
+                        item.setAttribute('aria-current', 'page');
+                    } else {
+                        item.removeAttribute('aria-current');
+                    }
+                });
+            }
+        });
+    });
+    
+    const body = document.querySelector('body');
+    const togglenav = document.getElementById('togglenav');
+    const menu = document.getElementById('menu');
+    const menuNav = document.getElementById('myMenu');
+    
+    togglenav.addEventListener('change', function() {
+        const isChecked = togglenav.checked;
+
+        togglenav.setAttribute('aria-expanded', isChecked ? 'true' : 'false');
+        menu.setAttribute('aria-expanded', isChecked ? 'true' : 'false');
+
+        body.dataset.menuOpen = isChecked ? 'true' : 'false';
+        
+        menuNav.classList.remove('mobile');
+    });
+
+    menuNav.addEventListener('click', function() {
+        togglenav.click();
     });
 });
 

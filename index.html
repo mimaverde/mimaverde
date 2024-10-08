@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png" type="image/png">
     <title>Mima Verde</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js"></script>
@@ -12,20 +13,36 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <nav class="header__nav" id="menu">
-                <ul id="myMenu">
-                    <li><a class="nav__link" aria-current="page" href="#home" data-content="home">Home</a></li>
-                    <li><a class="nav__link" href="#aboutMe" data-content="about-me">About me</a></li>
-                    <li><a class="nav__link" href="#skills" data-content="skills">Skills & Experiences</a></li>
-                    <li><a class="nav__link" href="#works" data-content="works">Works</a></li>
-                    <li><a class="nav__link" href="#contact" data-content="contact">Contact</a></li>
+            <nav class="header__nav" id="menu" role="navigation" aria-label="Main menu" aria-expanded="false">
+                <ul id="myMenu" role="menubar" class="mobile">
+                    <li>
+                        <a class="nav__link" role="menuitem" aria-current="page" href="#home"
+                            data-content="home">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" role="menuitem" href="#aboutMe" data-content="about-me">About me</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" role="menuitem" href="#skills" data-content="skills">Skills &
+                            Experiences</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" role="menuitem" href="#works" data-content="works">Works</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" role="menuitem" href="#contact" data-content="contact">Contact</a>
+                    </li>
                 </ul>
+
                 <div id="menuToggle" class="nav__mobile">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <input id="togglenav" class="menu-trigger hidden" type="checkbox" aria-controls="myMenu"
+                        aria-expanded="false">
+                    <label class="burger-wrapper" for="togglenav" aria-label="Toggle menu">
+                        <div class="hamburger"></div>
+                    </label>
                 </div>
             </nav>
+
         </div>
     </header>
     <section class="primary page" id="home" data-page="home">
@@ -33,6 +50,7 @@
             <div class="content__title">Mima Verde</div>
             <div class="content__subtitle">I'm a Frontend
                 Developer who enjoy coding things from scratch and bringing ideas to life.</div>
+
             <div class="see__more"><a class="nav__link" href="#aboutMe"><span>About me</span></a></div>
         </div>
         <div id="bubbles" class="bubbles"></div>
@@ -53,6 +71,16 @@
                         troubleshooting like a pro. Plus, I'm super organized and detail-oriented. I'm Brazilian but
                         working remotely for New Zealand.</p>
                 </div>
+                <ul class="block__social-media" aria-labelledby="social-media">
+                    <li><a href="https://www.linkedin.com/in/mileidesilva/" target="_blank" aria-label="Linkedin"><img
+                                src="./images/icon-linkedin.png" alt="Linkedin Icon"></a></li>
+                    <li><a href="https://github.com/mimaverde" target="_blank" aria-label="Githhub"><img
+                                src="./images/icon-github.png" alt="github Icon"></a></li>
+                    <li><a href="https://codepen.io/MimaVerde" target="_blank" aria-label="Codepen"><img
+                                src="./images/icon-codepen.png" alt="Codepen Icon"></a></li>
+                    <li><a href="https://open.spotify.com/user/mimaverde" target="_blank" aria-label="Spotify"><img
+                                src="./images/icon-spotify.png" alt="Spotify Icon"></a></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -105,9 +133,7 @@
                             class="block__logo"></a>
                 </div>
             </div>
-
         </div>
-
     </section>
 
 
@@ -134,7 +160,128 @@
                 quests.
                 As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
                 magic
-                hidden in every corner!</div>
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
+            <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
+                new
+                twist to your journey. Explore a whimsical world filled with charming characters and enchanting
+                quests.
+                As you share moments of joy and friendship, you’ll unlock exciting new adventures and uncover the
+                magic
+                hidden in every corner!
+            </div>
             <div class="see__more"><a href="" data-link="home"><span>Back Home</span></a></div>
         </div>
     </section>
@@ -143,7 +290,34 @@
             <div class="content__title">Contact</div>
             <div>
                 <form>
-
+                    <form class="contact-form hYlwmr" method="POST" target="_blank"
+                        action="https://formspree.io/hello@olaolu.dev" id="home-contact"><input type="hidden"
+                            name="_subject" value="Message from olaolu.dev!">
+                        <div class="form-row">
+                            <div class="" data-id="full-name">
+                                <label for="full-name"> Your
+                                    Name</label>
+                                <input id="full-name" type="text" name="name" required="required">
+                            </div>
+                            <div class="" data-id="email">
+                                <label for="email"> Email
+                                    Address</label>
+                                <input id="email" type="email" name="_replyto" required="required">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="" data-id="message"><label for="message"> Your
+                                    Message</label>
+                                <textarea id="message" name="message" required="required" rows="7"
+                                    minlength="30"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" id="submit-button">
+                            <div>
+                                Send
+                            </div>
+                        </button>
+                    </form>
                 </form>
             </div>
         </div>

@@ -131,3 +131,20 @@
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding-top: 30px;
 }
+
+.block__social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.block__social-media li,
+.block__social-media li a {
+    width: 50px;
+    height: 50px;
+}
+
+.block__social-media img {
+    width: 100%;
+}

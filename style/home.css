@@ -37,7 +37,7 @@
     color: var(--white);
     position: relative;
     width: 80vw;
-    max-width: 80%;
+    max-width: 1440px;
     margin: auto;
     z-index: 2;
     text-align: center;
@@ -107,7 +107,7 @@
 @media screen and (max-width: 768px) {
     .content {
         width: 90vw;
-        padding: 60px 0;
+        padding: 100px 0 180px;
     }
 
     .content__subtitle {
