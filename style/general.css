@@ -62,7 +62,7 @@ p {
 }
 
 ::selection {
-    background-color: var(--spaceecondary-color);
+    background-color: var(--secondary-color);
     color: var(--white);
 }
 
@@ -72,8 +72,8 @@ p {
 }
 
 .skills *::selection {
-    background-color: var(--color-1);
-    color: var(--white);
+    background-color: var(--yellow);
+    color: var(--primary-color);
 }
 
 a span::selection {
