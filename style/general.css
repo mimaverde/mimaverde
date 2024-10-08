@@ -15,6 +15,9 @@
     --color-2: #880db1;
     --color-3: #274458;
     --color-4: #461791;
+
+    --yellow: #F5F17D;
+    --dark-green: darkslategray;
 }
 
 :root {
@@ -53,6 +56,16 @@ p {
 
 ::selection {
     background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.about *::selection {
+    background-color: var(--white);
+    color: var(--color-4);
+}
+
+.skills *::selection {
+    background-color: var(--color-3);
     color: var(--white);
 }
 
