@@ -14,11 +14,11 @@
         <div class="header__container">
             <nav class="header__nav" id="menu">
                 <ul id="myMenu">
-                    <li><a class="nav__link selected" href="" data-content="home">Home</a></li>
-                    <li><a class="nav__link" href="#aboutMe">About me</a></li>
-                    <li><a class="nav__link" href="#skills">Skills & Experiences</a></li>
-                    <li><a class="nav__link" href="#works">Works</a></li>
-                    <li><a class="nav__link" href="#contact">Contact</a></li>
+                    <li><a class="nav__link" aria-current="page" href="#home" data-content="home">Home</a></li>
+                    <li><a class="nav__link" href="#aboutMe" data-content="about-me">About me</a></li>
+                    <li><a class="nav__link" href="#skills" data-content="skills">Skills & Experiences</a></li>
+                    <li><a class="nav__link" href="#works" data-content="works">Works</a></li>
+                    <li><a class="nav__link" href="#contact" data-content="contact">Contact</a></li>
                 </ul>
                 <div id="menuToggle" class="nav__mobile">
                     <div></div>
@@ -28,7 +28,7 @@
             </nav>
         </div>
     </header>
-    <section class="primary page">
+    <section class="primary page" id="home" data-page="home">
         <div class="content content--small">
             <div class="content__title">Mima Verde</div>
             <div class="content__subtitle">I'm a Frontend
@@ -38,7 +38,7 @@
         <div id="bubbles" class="bubbles"></div>
         <div class="cat"></div>
     </section>
-    <section class="page about" id="aboutMe">
+    <section class="page about" id="aboutMe" data-page="about-me">
         <div class="content">
             <div class="content__title">About me</div>
             <div class="block">
@@ -56,7 +56,7 @@
             </div>
         </div>
     </section>
-    <section class="page skills" id="skills">
+    <section class="page skills" id="skills" data-page="skills">
         <div class="content">
             <div class="content__title">Skills & Experiences</div>
             <div class="block__blocks">
@@ -125,7 +125,7 @@
 
 
 
-    <section class="page" id="works">
+    <section class="page" id="works" data-page="works">
         <div class="content">
             <div class="content__title">Work</div>
             <div class="content__subtitle">Step into a delightful adventure where every hug and high-five brings a
@@ -138,7 +138,7 @@
             <div class="see__more"><a href="" data-link="home"><span>Back Home</span></a></div>
         </div>
     </section>
-    <section class="page" id="contact">
+    <section class="page" id="contact" data-page="contact">
         <div class="content">
             <div class="content__title">Contact</div>
             <div>

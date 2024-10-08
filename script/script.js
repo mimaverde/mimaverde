@@ -49,5 +49,37 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Select all sections
+    const sections = document.querySelectorAll('[data-page]');
+    const nav = document.querySelectorAll('#myMenu a');
+
+    // Create an IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const page = entry.target.getAttribute('data-page');
+            document.body.className = page;
+
+            nav.forEach(item => {
+                if(item.hasAttribute('aria-current') !== page){
+                    item.removeAttribute('aria-current');
+                }
+                if(item.getAttribute('data-content') === page) {
+
+                    item.setAttribute('aria-current', 'page');
+                }
+            });
+            
+        }
+    });
+    }, {
+    threshold: 0.8
+    });
+
+    // Observe each section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });
 

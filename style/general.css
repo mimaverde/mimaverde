@@ -65,7 +65,7 @@ p {
 }
 
 .skills *::selection {
-    background-color: var(--color-3);
+    background-color: var(--color-1);
     color: var(--white);
 }
 

@@ -33,7 +33,7 @@ header {
     transition: all 0.3 ease;
 }
 
-.header__nav a.selected {
+.header__nav .nav__link[aria-current="page"] {
     background-color: var(--secondary-color);
 }
 

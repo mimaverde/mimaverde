@@ -135,7 +135,7 @@ section {
     z-index: 1;
 }
 section.page:nth-child(5){ 
-    background-color: var(--color-3);
+    background-color: var(--color-1);
 }
 section.page:nth-child(6){
     background-color: var(--color-2);
@@ -144,5 +144,5 @@ section.page:nth-child(3){
     background-color: var(--color-4);
 }
 section.page:nth-child(4){
-    background-color: var(--color-1);
+    background-color: var(--color-3);
 }
