@@ -395,37 +395,34 @@
     <section class="page" id="contact" data-page="contact">
         <div class="content">
             <div class="content__title">Contact</div>
-            <div>
-                <form>
-                    <form class="contact-form hYlwmr" method="POST" target="_blank"
-                        action="https://formspree.io/hello@olaolu.dev" id="home-contact"><input type="hidden"
-                            name="_subject" value="Message from olaolu.dev!">
-                        <div class="form-row">
-                            <div class="" data-id="full-name">
-                                <label for="full-name"> Your
-                                    Name</label>
-                                <input id="full-name" type="text" name="name" required="required">
-                            </div>
-                            <div class="" data-id="email">
-                                <label for="email"> Email
-                                    Address</label>
-                                <input id="email" type="email" name="_replyto" required="required">
-                            </div>
+            <div class="content__subtitle content--small content--contact">
+                <p>Got a question or just want to say hello? Send me a message using the form below, and I'll get back
+                    to
+                    you as soon as I can!</p>
+            </div>
+
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mkgnwaon" method="POST" id="myContact">
+                    <input type="hidden" name="subject" value="Message from Mima Verde!">
+                    <div class="form__row">
+                        <div class="form__field" data-id="full-name">
+                            <label for="full-name">Your Name</label>
+                            <input id="full-name" type="text" name="name" required>
                         </div>
-                        <div class="form-row">
-                            <div class="" data-id="message"><label for="message"> Your
-                                    Message</label>
-                                <textarea id="message" name="message" required="required" rows="7"
-                                    minlength="30"></textarea>
-                            </div>
+                        <div class="form__field" data-id="email">
+                            <label for="email">Email Address</label>
+                            <input id="email" type="email" name="email" required>
                         </div>
-                        <button type="submit" id="submit-button">
-                            <div>
-                                Send
-                            </div>
-                        </button>
-                    </form>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__field" data-id="message">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="7" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="contant__btn">Send</button>
                 </form>
+                <div id="myStatus" class="contact__status"></div>
             </div>
         </div>
     </section>

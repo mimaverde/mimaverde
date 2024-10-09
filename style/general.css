@@ -14,12 +14,14 @@
     --color-1: #32687f;
     --color-2: #880db1;
     --color-3: #274458;
-    --color-4: #461791;
+    --color-4: var(--purple);
 
     --yellow: #F5F17D;
     --dark-green: darkslategray;
 
     --space: 5px;
+
+    --transition: all 0.2s ease;
 
     box-sizing: border-box;
 }
