@@ -15,9 +15,11 @@
     --color-2: #880db1;
     --color-3: #274458;
     --color-4: var(--purple);
+    --color-5: #1c3f74;
 
     --yellow: #F5F17D;
     --dark-green: darkslategray;
+    --blue: #5EEAD4;
 
     --space: 5px;
 
@@ -68,6 +70,10 @@ p {
     color: var(--white);
 }
 
+a span::selection {
+    background-color: transparent;
+}
+
 .about *::selection {
     background-color: var(--white);
     color: var(--color-4);
@@ -78,9 +84,34 @@ p {
     color: var(--primary-color);
 }
 
-a span::selection {
-    background-color: transparent;
+.works *::selection {
+    background-color: var(--blue);
+    color: var(--color-5);
 }
+
+.page {
+    display: flex;
+    scroll-snap-align: start;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+}
+section.page:nth-child(5){ 
+    background-color: var(--color-5);
+}
+section.page:nth-child(6){
+    background-color: var(--color-2);
+}
+section.page:nth-child(3){
+    background-color: var(--color-4);
+}
+section.page:nth-child(4){
+    background-color: var(--color-3);
+}
+
 
 @keyframes animate {
     0% {

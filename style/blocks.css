@@ -29,6 +29,7 @@
 
 .block__skills {
     width: 40%;
+    align-content: center;
 }
 
 @media screen and (max-width: 960px) {
